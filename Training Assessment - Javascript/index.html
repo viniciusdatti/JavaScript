@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assessment Javascript</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- imagem da logo superior e nome's Code Assessment -->
+        <nav class="menu">
+            <div class="logo">
+                <img src="img/Superior-Logo.png" alt="logo-superior">
+                    <h1 class="title">Vinicius Datti's Code Assessment - JavaScript</h1>
+            </div>
+                         <!-- lista com itens de navegação -->
+                <ul>
+                    <li><a href="#" id="home-link">Home</a></li>
+                    <li><a href="#" id="equipment-btn">Equipment</a></li>
+                    <li><a href="#" id="order-link">Order</a></li>
+                    <li><a href="#" id="contact-link">Contact Us</a></li>
+                </ul>
+                    <div id="counter" class="hidden">
+                        <a href="#" id="link-contact-us">Contact Us</a>
+                        <span id="date"></span>
+                         <span id="time"></span>
+                    </div>
+        </nav>
+    <main>
+        <p id="datetime"></p>
+
+        <!-- equipamentos do site e descrição-->
+        <div id="equipment-container" style="display: none;">
+            <div class="equipment-item" id="equipment-item-1">
+                <img src="img/equipamento1.jpeg" alt="Equipamento 1" class="equipment-image">
+                    <h2>Transportadores de Correia de Alimentação</h2>
+                        <div class="equipment-details">
+                            <p class="descrição-equipamentos">Transportadores de correia de alimentação são algumas das peças mais cruciais de máquinas em sua planta. Eles são os lançadores de tendência, os marcapassos e o início de uma operação de manuseio ou processamento em massa ordenada e próspera. <br> <br>
+                                Confie em nós quando dizemos que estamos prestando atenção especial à durabilidade, manutenção e flexibilidade desses trabalhadores da linha de frente.</p>
+                        </div>
+                <div class="equipment-info"></div>
+            </div>
+
+            <div class="equipment-item" id="equipment-item-2">
+                <img src="img/equipamento2.jpeg" alt="Equipamento 2" class="equipment-image">
+                     <h2>Transportadoras de Correia de Transferência</h2>
+                        <div class="equipment-details">
+                            <p class="descrição-equipamentos">Enquanto construímos nossa reputação sobre o poder da portabilidade, nossas usinas fabricaram outro tanto de transportadores estacionários. Associados a plantas fixas de processamento, as esteiras transportadoras estacionárias conectam as operações de processamento de suas plantas.<br> <br>
+                            A Superior projeta e fabrica essas conexões de manuseio de materiais de forma robusta para um emprego confiável e de longo prazo.</p>
+                        </div>
+                            <div class="equipment-info"></div>
+            </div>
+
+            <div class="equipment-item" id="equipment-item-3">
+                <img src="img/equipamento3.jpeg" alt="Equipamento 3" class="equipment-image">
+                    <h2>Transportadoras de Correia Fixos</h2>
+                         <div class="equipment-details">
+                            <p class="descrição-equipamentos">Rapidamente… qual é o elo mais forte em uma corrente? Enquanto as peças de início e fim recebem a maior parte da atenção, acreditamos no poder do meio – e geralmente é aí que você encontra suas transportador de correia de transferência.<br> <br>
+
+                                Muitas vezes ignorada por ser maçante e comum, é a transportador de correia de transferência que é responsável por manter a produção. Porque sem uma transferência confiável e de alta qualidade, metade da sua fábrica não estaria fechada?</p>
+                        </div>
+                            <div class="equipment-info"></div>
+            </div>
+
+            <div class="equipment-item" id="equipment-item-4">
+                <img src="img/equipamento4.jpeg" alt="Equipamento 4" class="equipment-image">
+                    <h2>Transportadoras de Correia de Empilhamento</h2>
+                     <div class="equipment-details">
+                         <p class="descrição-equipamentos">Nossa reputação foi conquistada nas correias de nossos transportadores de empilhamento industriosos. Na coroa está o TeleStacker® Conveyor . Este transportador de empilhamento radial telescópico é conhecido como o  rei do estoque  desde a década de 1990. <br> <br>
+
+                            A Superior está constantemente se reinventando e – graças à ajuda de nossos clientes criativos – constantemente se modernizando. Com o TeleStacker Conveyor como base, nossos transportadores progressivos de estoque estão prontos para o seu desafio.</p>
+                    </div>
+                        <div class="equipment-info"></div>
+            </div>
+
+        </div>
+
+        <form class="form">
+            <label for="equipamento">Selecione um equipamento:</label>
+                <select id="equipamento" name="equipamento">
+                    <option value="transportadores-de-correia">Transportadores de Correia de Alimentação</option>
+                    <option value="correias-de-transferência">Transportadoras de Correia de Transferência</option>
+                    <option value="correia-fixos">Transportadora de Correia Fixos</option>
+                    <option value="correia-de-empilhamento">Transportadores de Correia de Empilhamento</option>
+                </select>
+
+                <label class="quantidade" for="quantidade">Quantidade:</label>
+                <input class="quantidade" type="number" id="quantidade" name="quantidade" min="1" step="1" pattern="\d+" required>
+                <div class="container">
+                    <button class="button" type="button" id="addButton">Add</button>
+                </div>
+                    <ul id="itemList"></ul>
+                     <button class="button-request" type="button" id="sendButton">Send Request</button>
+        </form>
+    </main>
+</body>
+        <!-- chat -->
+        <title>Chat</title>
+    <a href="#" id="content-link">Content</a>
+     <div id="chat-container">
+        <div id="chat-window">
+            <div id="chat-messages"></div>
+            <form id="chat-form">
+                <input type="text" id="chat-input" placeholder="Digite sua mensagem aqui">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</html>
+
+
